@@ -1,0 +1,14 @@
+.drop-zone {
+  padding: 3rem 8rem;
+  background-color: #f6f8fb;
+  margin-top: 2.5rem;
+  border-radius: 1rem;
+  border: 1px dashed #97bef4;
+}
+.icon {
+  margin-bottom: 2rem;
+}
+.label {
+  font-size: 1.2rem;
+  color: #bdbdbd;
+}

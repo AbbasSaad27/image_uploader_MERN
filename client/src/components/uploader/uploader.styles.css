@@ -1,0 +1,9 @@
+.uploader {
+  background-color: white;
+  box-shadow: 0px 2px 10px 0px #0000001a;
+  padding: 4rem 3rem;
+}
+.uploader-title {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
