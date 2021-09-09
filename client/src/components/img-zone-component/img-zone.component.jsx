@@ -1,5 +1,5 @@
 import React from "react";
-import "./drag-drop.styles.css";
+import "./img-zone.styles.css";
 import { ReactComponent as Icon } from "../../img/image.svg";
 
 const ImgZone = ({ inputEl, setFiles }) => {

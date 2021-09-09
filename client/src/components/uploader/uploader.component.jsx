@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Button from "../btn/btn.component";
-import ImgZone from "../drag-drop-component/drag-drop.component";
+import ImgZone from "../img-zone-component/img-zone.component";
 import "./uploader.styles.css";
 
 const Uploader = ({ setFiles }) => {
