@@ -43,7 +43,6 @@ function App() {
     return (
       <div className="App">
         <Uploader imgSrc={files.name} />
-        {console.log(files)}
       </div>
     );
   }

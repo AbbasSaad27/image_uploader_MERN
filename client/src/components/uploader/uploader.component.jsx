@@ -34,10 +34,7 @@ const Uploader = ({ setFiles, imgSrc }) => {
             readOnly
             className="img-source-link"
             ref={imgLink}
-            value="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
-            totam id beatae minus maiores provident incidunt odit nemo
-            dignissimos dicta, nihil nostrum officiis impedit dolores
-            repudiandae nulla. Nulla, maiores ut."
+            value={imgSrc}
           />
           <Button onClick={copyTextToClipBoard} cls="btn-link">
             Copy Link
