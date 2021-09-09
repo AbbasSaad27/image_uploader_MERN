@@ -3,18 +3,49 @@ import Button from "../btn/btn.component";
 import ImgZone from "../img-zone-component/img-zone.component";
 import "./uploader.styles.css";
 
-const Uploader = ({ setFiles }) => {
+const Uploader = ({ setFiles, imgSrc }) => {
   const inputEl = useRef(null);
+  const imgLink = useRef(null);
 
   // for clicking the input el programmatically
   const handleClick = () => {
     inputEl.current.click();
   };
 
+  const copyTextToClipBoard = () => {
+    imgLink.current.select();
+    navigator.clipboard.writeText(imgLink.current.value);
+  };
+
   const handleChange = (e) => {
     setFiles(e.target.files[0]);
     console.log("event fired");
   };
+
+  if (imgSrc) {
+    return (
+      <div className="uploader">
+        <div className="tick-container">&#10004;</div>
+        <h2 className="uploaded-status">Uploaded Successfully!</h2>
+        <ImgZone imgSrc={imgSrc} />
+        <div className="img-source-container">
+          <input
+            type="text"
+            readOnly
+            className="img-source-link"
+            ref={imgLink}
+            value="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+            totam id beatae minus maiores provident incidunt odit nemo
+            dignissimos dicta, nihil nostrum officiis impedit dolores
+            repudiandae nulla. Nulla, maiores ut."
+          />
+          <Button onClick={copyTextToClipBoard} cls="btn-link">
+            Copy Link
+          </Button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="uploader">

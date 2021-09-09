@@ -2,7 +2,7 @@ import React from "react";
 import "./img-zone.styles.css";
 import { ReactComponent as Icon } from "../../img/image.svg";
 
-const ImgZone = ({ inputEl, setFiles }) => {
+const ImgZone = ({ inputEl, setFiles, imgSrc }) => {
   // for selecting the input element
 
   // handling drag over
@@ -16,6 +16,14 @@ const ImgZone = ({ inputEl, setFiles }) => {
     inputEl.current.files = e.dataTransfer.files;
     setFiles(inputEl.current.files[0]);
   };
+
+  if (imgSrc) {
+    return (
+      <div className="img-zone">
+        <img src={imgSrc} alt="img" className="uploaded-img" />
+      </div>
+    );
+  }
 
   return (
     <div className="drop-zone" onDrop={handleDrop} onDragOver={handleDragOver}>

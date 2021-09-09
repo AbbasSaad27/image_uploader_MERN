@@ -19,3 +19,49 @@
 .file-input {
   display: none;
 }
+.tick-container {
+  color: white;
+  background-color: #219653;
+  width: 3rem;
+  margin: auto;
+  font-size: 2rem;
+  border-radius: 50%;
+}
+.uploaded-status {
+  font-weight: 500;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+.img-source-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 38rem;
+  height: 3.5rem;
+  background-color: #f6f8fb;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 11rem;
+  margin-top: 1rem;
+  border: 1px solid #e0e0e0;
+}
+.img-source-link {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background-color: unset;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.img-source-link:focus {
+  outline: none;
+}
+.img-source-link::-webkit-scrollbar {
+  display: none;
+}
+.btn-link {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  padding: 0.8rem 2rem;
+}

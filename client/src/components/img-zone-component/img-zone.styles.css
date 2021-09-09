@@ -13,3 +13,11 @@
   font-size: 1.2rem;
   color: #bdbdbd;
 }
+.img-zone {
+  width: 38rem;
+  height: 20rem;
+}
+.uploaded-img {
+  width: 100%;
+  height: 100%;
+}

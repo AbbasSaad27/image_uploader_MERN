@@ -18,15 +18,35 @@ function App() {
         method: "post",
         body: formData,
       }).catch(console.error);
-      setLoader(false);
+
+      setTimeout(() => {
+        setLoader(false);
+      }, 5000);
     }
   }, [files]);
 
-  return (
-    <div className="App">
-      {files ? <Loader /> : <Uploader setFiles={setFiles} />}
-    </div>
-  );
+  if (!files) {
+    return (
+      <div className="App">
+        <Uploader setFiles={setFiles} />
+      </div>
+    );
+  }
+  if (loader) {
+    return (
+      <div className="App">
+        <Loader />
+      </div>
+    );
+  }
+  if (files && !loader) {
+    return (
+      <div className="App">
+        <Uploader imgSrc={files.name} />
+        {console.log(files)}
+      </div>
+    );
+  }
 }
 
 export default App;
