@@ -2,6 +2,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 //internal imports
 const imageUploadRouter = require('./routers/imageUploadRouter');
@@ -14,7 +15,8 @@ dotenv.config();
 
 //default middlewares
 app.use(express.json());
-app.use('/', express.static('./../client/public/'));
+app.use(cors());
+app.use(express.static(`${__dirname}/public/`));
 app.use(express.urlencoded({ extended: true }));
 
 //database connection
