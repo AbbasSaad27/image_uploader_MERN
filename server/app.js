@@ -36,6 +36,7 @@ app.use((error, req, res, next) => {
    }
    res.status(500).json({ error });
 });
+const PORT = process.env.POR || 5000;
 
 app.listen(process.env.PORT, () => {
    console.log(`App is alive on localhost:${process.env.PORT}`);
