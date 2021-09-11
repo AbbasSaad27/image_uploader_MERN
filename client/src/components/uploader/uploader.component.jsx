@@ -14,6 +14,7 @@ const Uploader = ({ setFiles, imgSrc }) => {
 
   const copyTextToClipBoard = () => {
     imgLink.current.select();
+    imgLink.current.setSelectionRange(0, 99999); // for mobile devices
     navigator.clipboard.writeText(imgLink.current.value);
   };
 

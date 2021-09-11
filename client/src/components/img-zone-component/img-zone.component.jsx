@@ -3,8 +3,6 @@ import "./img-zone.styles.css";
 import { ReactComponent as Icon } from "../../img/image.svg";
 
 const ImgZone = ({ inputEl, setFiles, imgSrc }) => {
-  // for selecting the input element
-
   // handling drag over
   const handleDragOver = (e) => {
     e.preventDefault();
