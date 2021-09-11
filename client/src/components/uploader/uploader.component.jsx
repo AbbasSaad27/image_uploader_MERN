@@ -19,7 +19,6 @@ const Uploader = ({ setFiles, imgSrc }) => {
 
   const handleChange = (e) => {
     setFiles(e.target.files[0]);
-    console.log("event fired");
   };
 
   if (imgSrc) {
