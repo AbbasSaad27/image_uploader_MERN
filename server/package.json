@@ -7,8 +7,8 @@
    "description": "",
    "main": "server.js",
    "scripts": {
-      "start": "NODE_ENV=development nodemon app.js",
-      "production": "NODE_ENV=production node app.js"
+      "start": "NODE_ENV=production node app.js",
+      "dev": "NODE_ENV=development nodemon app.js"
    },
    "author": "Faiyaz Rahman",
    "license": "ISC",
