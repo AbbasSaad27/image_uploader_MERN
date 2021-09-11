@@ -5,7 +5,7 @@ const Image = require('../models/Image');
 async function uploadImageToDatabase(req, res, next) {
    console.log(req.file);
    //prepare image url to access
-   const imageAccessLink = `http://localhost:5000/uploads/${req.file.filename}`;
+   const imageAccessLink = `${process.env.APP_URL}/uploads/${req.file.filename}`;
 
    try {
       const newImage = new Image({
