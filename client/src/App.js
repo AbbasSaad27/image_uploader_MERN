@@ -5,8 +5,6 @@ import Uploader from "./components/uploader/uploader.component";
 
 function App() {
   const [files, setFiles] = useState(null);
-  // const [loader, setLoader] = useState(false);
-  // const [imgLink, setImgLink] = useState(null);
   const [uploadObj, setUploadObj] = useState({ imgLink: null, loader: false });
 
   useEffect(() => {

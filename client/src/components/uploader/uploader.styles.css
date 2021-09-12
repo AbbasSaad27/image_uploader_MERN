@@ -42,7 +42,6 @@
   border-radius: 1rem;
   padding-left: 1rem;
   padding-right: 11rem;
-  margin-top: 1rem;
   border: 1px solid #e0e0e0;
 }
 .img-source-link {
@@ -62,7 +61,6 @@
 .btn-link {
   position: absolute;
   right: 1px;
-  top: 1px;
   padding: 0.8rem 2rem;
 }
 @media only screen and (max-width: 460px) {
@@ -71,9 +69,6 @@
   }
   .img-source-container {
     width: 100%;
-  }
-  .btn-link {
-    padding: 0.7rem 2rem;
   }
 }
 @media only screen and (max-width: 280px) {
